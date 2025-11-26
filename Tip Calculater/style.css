@@ -1,0 +1,113 @@
+:root {
+    --bg-dark: oklch(0.1 0.025 264);
+    --bg: oklch(0.15 0.025 264);
+    --bg-light: oklch(0.2 0.025 264);
+    --text: oklch(0.96 0.05 264);
+    --text-muted: oklch(0.76 0.05 264);
+    --highlight: oklch(26.809% 0.02009 264.172);
+    --border: oklch(0.4 0.05 264);
+    --border-muted: oklch(0.3 0.05 264);
+    --primary: oklch(0.76 0.1 264);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-dark);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+}
+
+.main {
+    width: 70%;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    padding: 11px;
+    transition: all 0.7s ease;
+}
+
+.main:hover{
+    box-shadow: 0 0 15px rgba(255, 254, 254, 0.504);
+    background-color: var(--bg);
+}
+
+h1 {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 11px 0;
+    color: var(--text);
+}
+
+p {
+    padding: 7px 15px;
+    color: var(--text-muted);
+    font-size: 21px;
+}
+
+label {
+    font-size: 21px;
+    padding: 7px 15px;
+    color: var(--text-muted);
+    display: block;
+}
+
+input {
+    font-size: 21px;
+    padding: 7px 15px;
+    margin: 0 15px;
+    width: 95%;
+    background-color: var(--bg-light);
+    color: var(--text-muted);
+    border: 1px solid var(--border-muted);
+    border-radius: 21px;
+    box-shadow: 0 0 5px rgba(255, 254, 254, 0.504);
+    /* outline: 2px solid var(--border); */
+    transition: all 0.7s ease;
+}
+input:hover{
+    box-shadow: 0 0 15px rgba(255, 254, 254, 0.504);
+    background-color: var(--highlight);
+}
+
+button {
+    font-size: 25px;
+    padding: 5px 15px;
+    margin: 25px 15px 10px 15px;
+    width: 95%;
+    background-color: var(--bg-light);
+    color: var(--text);
+    border: 1px solid var(--border-muted);
+    border-radius: 51px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 254, 254, 0.504);
+    transition: all 0.7s ease;
+}
+button:hover{
+    box-shadow: 0 0 15px rgba(255, 254, 254, 0.504);
+    background-color: var(--highlight);
+}
+
+/* responsivenes */
+@media(max-width: 480px) {
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
