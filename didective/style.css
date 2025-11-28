@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/1200x/da/b9/90/dab990eaa0837742e5d06928afd1f059.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+:root{
+    --x: 100px;
+    --y: 100px;
+}
+
+.frunt{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.671); */
+    background: radial-gradient(circle 150px at var(--x) var(--y), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.849));
+}
+
+.txt{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: springgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 51px;
+}
+
