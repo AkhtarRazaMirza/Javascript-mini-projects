@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Digital Pet</h1>
+            <p class="tagline">Care for your friendly companion</p>
+        </div>
+    </header>
+
+    <main class="container" id="main">
+        <section class="pet-card" aria-labelledby="pet-title">
+            <div class="pet-media">
+                <div id="pet-avatar" class="pet-avatar" aria-hidden="true"></div>
+            </div>
+
+            <div class="pet-info">
+                <div class="pet-top">
+                    <h2 id="pet-title">Your pet</h2>
+                    <div class="pet-nav" aria-hidden="false">
+                        <button id="prev-pet" class="btn" title="Previous pet">◀</button>
+                        <button id="next-pet" class="btn" title="Next pet">▶</button>
+                    </div>
+                </div>
+                <p class="pet-name">Name: <strong id="pet-name">Pet</strong></p>
+
+                <div class="stats" aria-live="polite">
+                    <label>Hunger <span class="stat-value" id="hunger-level">50</span></label>
+                    <div class="progress"><span id="hunger-bar" class="progress-fill"></span></div>
+
+                    <label>Energy <span class="stat-value" id="energy-level">100</span></label>
+                    <div class="progress"><span id="energy-bar" class="progress-fill"></span></div>
+
+                    <label>Happiness <span class="stat-value" id="happiness-level">80</span></label>
+                    <div class="progress"><span id="happiness-bar" class="progress-fill"></span></div>
+                </div>
+
+                <div id="controls" class="controls" role="group" aria-label="Pet actions">
+                    <button id="feed-button" class="btn" title="Feed your pet">🍎 Feed</button>
+                    <button id="play-button" class="btn" title="Play with your pet">🎾 Play</button>
+                    <button id="sleep-button" class="btn" title="Let your pet sleep">😴 Sleep</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
